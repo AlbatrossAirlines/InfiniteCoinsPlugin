@@ -1,0 +1,5 @@
+﻿.idea/
+lib/*
+bin/
+obj/
+Folder.DotSettings.User
