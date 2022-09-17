@@ -1,6 +1,6 @@
 ﻿# Infinite Coins Plugin
 ### Description
-BepInEx plugin that gets rid of the cooldown on coin tosses.
+BepInEx plugin that gets rid of the cooldown and animation delay on coin tosses.
 
 ### Installation
 1. Install [BepInEx](https://docs.bepinex.dev/articles/user_guide/installation/index.html) and run Ultrakill
