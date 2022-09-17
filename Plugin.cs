@@ -4,14 +4,14 @@ using HarmonyLib;
 
 namespace InfiniteCoins;
 
-[BepInPlugin(MyPluginInfo.PLUGIN_GUID, MyPluginInfo.PLUGIN_NAME, MyPluginInfo.PLUGIN_VERSION)]
+[BepInPlugin("al.infinitecoins", "InfiniteCoins", "1.1.0")]
 public class InfiniteCoins : BaseUnityPlugin
 {
     private static Harmony _harmony;
     
     private void Awake()
     {
-        Logger.LogInfo($"Plugin {MyPluginInfo.PLUGIN_GUID} is loaded!");
+        Logger.LogInfo($"InfiniteCoins is loaded!");
         _harmony = new Harmony(string.Format("harmony-auto-{0}", (object)Guid.NewGuid()));
         
         var updatePatch = typeof(InfiniteCoinPatches).GetMethod("Update");
